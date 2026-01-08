@@ -10,6 +10,14 @@ export default withMermaid(
       nav: [
         { text: 'Home', link: '/' },
         { text: 'Projects', link: '/projects/' },
+        {
+          text: 'Docs',
+          items: [
+            { text: 'Moss', link: 'https://rhizome-lab.github.io/moss/' },
+            { text: 'Bloom', link: 'https://rhizome-lab.github.io/bloom/' },
+            { text: 'Resin', link: 'https://rhizome-lab.github.io/resin/' },
+          ]
+        },
       ],
 
       sidebar: {
