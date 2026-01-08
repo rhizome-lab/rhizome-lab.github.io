@@ -1,8 +1,8 @@
-# Bloom
+# Lotus
 
 **A persistent multiplayer world runtime.**
 
-Bloom is a LambdaMOO-inspired system built on Lua with persistent entity storage. Create scriptable objects, rooms, NPCs, and more in a capability-secured environment.
+Lotus is a LambdaMOO-inspired system built on Lua with persistent entity storage. Create scriptable objects, rooms, NPCs, and more in a capability-secured environment.
 
 ## Key Features
 
@@ -13,7 +13,7 @@ Bloom is a LambdaMOO-inspired system built on Lua with persistent entity storage
 
 ## Architecture
 
-Bloom separates concerns into:
+Lotus separates concerns into:
 
 - **Core** - Entity system, persistence, capability model
 - **Scripting** - Lua runtime with sandboxing
@@ -21,5 +21,5 @@ Bloom separates concerns into:
 
 ## Links
 
-- [GitHub](https://github.com/rhizome-lab/bloom)
-- [Documentation](https://rhizome-lab.github.io/bloom/)
+- [GitHub](https://github.com/rhizome-lab/lotus)
+- [Documentation](https://rhizome-lab.github.io/lotus/)

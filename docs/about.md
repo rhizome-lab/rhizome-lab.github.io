@@ -11,7 +11,7 @@ The projects share common design principles:
 Prefer one flexible solution over many specialized ones. Composability reduces cognitive load and maintenance burden.
 
 - **Moss**: Three primitives (view, edit, analyze) instead of 100 specialized tools
-- **Bloom**: Generic entity system that can power games, knowledge bases, or productivity tools
+- **Lotus**: Generic entity system that can power games, knowledge bases, or productivity tools
 - **Resin**: Unified `Field<I, O>` trait for textures, audio, and any continuous domain
 
 ### Structure Over Text
@@ -26,7 +26,7 @@ Build descriptions, evaluate on demand. Don't pay for what you don't use.
 
 - **Resin**: Procedural textures and audio are lazy fields, materialized only when rendered
 - **Moss**: Skeleton views extract structure without loading entire files
-- **Bloom**: Entity properties are computed on access, not upfront
+- **Lotus**: Entity properties are computed on access, not upfront
 
 ### Plugin Architecture
 
@@ -57,7 +57,7 @@ Our projects are designed the same way: independent tools that compose well toge
 | Project | Domain | Key Idea |
 |---------|--------|----------|
 | [Moss](/projects/moss) | Code intelligence | AST-aware navigation and editing across 98 languages |
-| [Bloom](/projects/bloom) | Persistent worlds | LambdaMOO-inspired entity system with Lua scripting |
+| [Lotus](/projects/lotus) | Persistent worlds | LambdaMOO-inspired entity system with Lua scripting |
 | [Resin](/projects/resin) | Media generation | Composable procedural primitives for meshes, audio, textures |
 
 ## Integration
@@ -67,15 +67,15 @@ The projects are designed to work together:
 ```mermaid
 graph LR
     subgraph "Development"
-        M[Moss] --> |analyzes| B[Bloom]
+        M[Moss] --> |analyzes| L[Lotus]
         M --> |analyzes| R[Resin]
     end
     subgraph "Runtime"
-        B --> |uses| R
-        R --> |assets for| B
+        L --> |uses| R
+        R --> |assets for| L
     end
 ```
 
-- **Moss** provides code intelligence for developing Bloom and Resin
-- **Resin** generates procedural assets (textures, meshes, audio) for Bloom worlds
-- **Bloom** can host interactive editors for Resin node graphs
+- **Moss** provides code intelligence for developing Lotus and Resin
+- **Resin** generates procedural assets (textures, meshes, audio) for Lotus worlds
+- **Lotus** can host interactive editors for Resin node graphs

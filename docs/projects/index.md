@@ -8,7 +8,7 @@ Rhizome is an ecosystem of tools for programmable creativity—software that tre
 
 Structural code intelligence for humans and AI agents. Moss provides AST-aware tools for understanding, navigating, and modifying code across 98 languages.
 
-### [Bloom](/projects/bloom)
+### [Lotus](/projects/lotus)
 
 A LambdaMOO-inspired Lua runtime with persistent entity storage. Build scriptable objects, rooms, NPCs, and multiplayer worlds with capability-based security.
 

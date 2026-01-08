@@ -14,10 +14,10 @@ graph TB
     end
 
     subgraph "Runtime"
-        B[Bloom]
-        B --> ES[Entity System]
-        B --> LUA[Lua Scripting]
-        B --> PS[Persistence]
+        L[Lotus]
+        L --> ES[Entity System]
+        L --> LUA[Lua Scripting]
+        L --> PS[Persistence]
     end
 
     subgraph "Media Generation"
@@ -70,7 +70,7 @@ Key components:
 - **File Index**: SQLite symbol/call graph with background daemon
 - **Shadow Git**: Hunk-level edit tracking in `.moss/.git`
 
-## Bloom Architecture
+## Lotus Architecture
 
 Persistent multiplayer world runtime:
 

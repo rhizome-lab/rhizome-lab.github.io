@@ -10,18 +10,18 @@ While each project is useful standalone, they're designed to compose:
 graph TD
     subgraph Development
         DEV[Developer] --> |uses| MOSS[Moss]
-        MOSS --> |navigates| BLOOM_CODE[Bloom codebase]
+        MOSS --> |navigates| LOTUS_CODE[Lotus codebase]
         MOSS --> |navigates| RESIN_CODE[Resin codebase]
     end
 
     subgraph Runtime
-        BLOOM[Bloom World] --> |generates| RESIN[Resin]
-        RESIN --> |assets| BLOOM
+        LOTUS[Lotus World] --> |generates| RESIN[Resin]
+        RESIN --> |assets| LOTUS
     end
 
     subgraph Future
-        BLOOM --> |hosts| EDITOR[Resin Editor]
-        EDITOR --> |saves to| BLOOM
+        LOTUS --> |hosts| EDITOR[Resin Editor]
+        EDITOR --> |saves to| LOTUS
     end
 ```
 
@@ -30,11 +30,11 @@ graph TD
 Moss provides code intelligence for any Rust or TypeScript codebase:
 
 ```bash
-# Navigate Bloom's entity system
-moss view bloom/crates/core/src/entity.rs
+# Navigate Lotus's entity system
+moss view lotus/crates/core/src/entity.rs
 
-# Find all Lua bindings in Bloom
-moss view bloom/ --calls "lua.*"
+# Find all Lua bindings in Lotus
+moss view lotus/ --calls "lua.*"
 
 # Analyze Resin's complexity hotspots
 moss analyze resin/crates/ --complexity
@@ -43,9 +43,9 @@ moss analyze resin/crates/ --complexity
 moss view resin/ --type impl
 ```
 
-## Resin + Bloom
+## Resin + Lotus
 
-Resin generates procedural assets that Bloom worlds can use:
+Resin generates procedural assets that Lotus worlds can use:
 
 ### Procedural Textures for Rooms
 
@@ -63,7 +63,7 @@ wall.render(512, 512).save("wall.png");
 ```
 
 ```lua
--- Bloom: Use the texture in a room
+-- Lotus: Use the texture in a room
 room.texture = "/assets/wall.png"
 ```
 
@@ -93,20 +93,20 @@ let gem = icosphere(2)
 gem.export("gem.glb");
 ```
 
-## Future: Bloom Hosts Resin Editor
+## Future: Lotus Hosts Resin Editor
 
-A longer-term integration: Bloom as a persistent backend for a Resin node graph editor.
+A longer-term integration: Lotus as a persistent backend for a Resin node graph editor.
 
 ```mermaid
 sequenceDiagram
     participant User
     participant Editor as Web Editor
-    participant Bloom
+    participant Lotus
     participant Resin
 
     User->>Editor: Edit node graph
-    Editor->>Bloom: Save graph entity
-    Bloom->>Bloom: Persist to SQLite
+    Editor->>Lotus: Save graph entity
+    Lotus->>Lotus: Persist to SQLite
     User->>Editor: Request preview
     Editor->>Resin: Evaluate graph
     Resin->>Editor: Return image/audio
@@ -114,7 +114,7 @@ sequenceDiagram
 ```
 
 Benefits:
-- **Persistence**: Graph saved as Bloom entity with full history
+- **Persistence**: Graph saved as Lotus entity with full history
 - **Collaboration**: Multiple users edit the same graph
 - **Scripting**: Lua scripts can manipulate graphs programmatically
 - **Versioning**: Entity revision history provides undo/branching
@@ -127,7 +127,7 @@ All projects expose their core as Rust libraries:
 # Cargo.toml
 [dependencies]
 moss = { git = "https://github.com/rhizome-lab/moss" }
-bloom-core = { git = "https://github.com/rhizome-lab/bloom" }
+lotus-core = { git = "https://github.com/rhizome-lab/lotus" }
 resin = { git = "https://github.com/rhizome-lab/resin" }
 ```
 
@@ -136,7 +136,7 @@ This allows building custom tools that combine capabilities:
 ```rust
 use moss::view::skeleton;
 use resin::texture::perlin;
-use bloom_core::entity::Entity;
+use lotus_core::entity::Entity;
 
 // Analyze code structure, generate assets, store in world
 ```

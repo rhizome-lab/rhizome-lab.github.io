@@ -94,7 +94,7 @@ When adding features, update relevant documentation. Prefer updating existing do
 ## Project-Specific Guidelines
 
 - **Moss**: See `CLAUDE.md` for detailed behavioral rules and design philosophy
-- **Bloom**: Check `docs/development.md` for build instructions
+- **Lotus**: Check `docs/development.md` for build instructions
 - **Resin**: See `docs/philosophy.md` for design principles
 
 ## Questions?
