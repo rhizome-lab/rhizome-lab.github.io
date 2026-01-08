@@ -9,6 +9,7 @@ export default withMermaid(
     themeConfig: {
       nav: [
         { text: 'Home', link: '/' },
+        { text: 'About', link: '/about' },
         { text: 'Projects', link: '/projects/' },
         {
           text: 'Docs',
@@ -23,11 +24,25 @@ export default withMermaid(
       sidebar: {
         '/': [
           {
+            text: 'Overview',
+            items: [
+              { text: 'About', link: '/about' },
+              { text: 'Architecture', link: '/architecture' },
+              { text: 'Integration', link: '/integration' },
+            ]
+          },
+          {
             text: 'Projects',
             items: [
               { text: 'Moss', link: '/projects/moss' },
               { text: 'Bloom', link: '/projects/bloom' },
               { text: 'Resin', link: '/projects/resin' },
+            ]
+          },
+          {
+            text: 'Community',
+            items: [
+              { text: 'Contributing', link: '/contributing' },
             ]
           },
         ]
