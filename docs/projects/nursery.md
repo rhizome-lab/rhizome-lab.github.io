@@ -19,7 +19,7 @@ Nursery is the glue that holds the Rhizome ecosystem together. Instead of memori
 name = "my-project"
 version = "0.1.0"
 
-[winnow]
+[siphon]
 source = "./dump/game.exe"
 strategy = "gms2"
 assets = "./assets/raw"
@@ -35,7 +35,7 @@ This file **is** the documentation. It shows exactly how the tools compose for y
 
 Pre-configured starter templates:
 
-- **seed-archaeology** - Lifting legacy games (winnow → lotus)
+- **seed-archaeology** - Lifting legacy games (siphon → lotus)
 - **seed-creation** - New Lotus projects from scratch
 - **seed-lab** - Full ecosystem sandbox
 

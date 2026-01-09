@@ -65,7 +65,7 @@ Our projects are designed the same way: independent tools that compose well toge
 | [Liana](/projects/liana) | API bindings | IR and codegen for cross-language bindings |
 | [Cambium](/projects/cambium) | Pipelines | Type-driven route planning for data conversion |
 | [Canopy](/projects/canopy) | UI | Universal client with control plane for any data source |
-| [Winnow](/projects/winnow) | Preservation | Legacy software lifting from obsolete runtimes |
+| [Siphon](/projects/siphon) | Preservation | Legacy software lifting from obsolete runtimes |
 | [Nursery](/projects/nursery) | Orchestration | Manifest-based coordination of Rhizome tools |
 
 ## Integration
@@ -93,7 +93,7 @@ graph LR
         F[Frond]
     end
     subgraph "Preservation"
-        W[Winnow]
+        W[Siphon]
     end
     subgraph "Interface"
         CN[Canopy] --> |views & controls| L
@@ -111,4 +111,4 @@ graph LR
 - **Cambium** orchestrates asset conversion pipelines
 - **Liana** generates API bindings across the ecosystem
 - **Canopy** provides UI for viewing and controlling any project
-- **Winnow** lifts legacy software into modern web runtimes
+- **Siphon** lifts legacy software into modern web runtimes

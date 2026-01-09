@@ -17,7 +17,7 @@ Tools for programmable creativity.
 | [Liana](https://github.com/rhizome-lab/liana) | API bindings IR and code generation |
 | [Cambium](https://github.com/rhizome-lab/cambium) | Pipeline orchestrator for data conversion |
 | [Canopy](https://github.com/rhizome-lab/canopy) | Universal UI client with control plane |
-| [Winnow](https://github.com/rhizome-lab/winnow) | Legacy software lifting framework |
+| [Siphon](https://github.com/rhizome-lab/siphon) | Legacy software lifting framework |
 | [Nursery](https://github.com/rhizome-lab/nursery) | Ecosystem orchestrator via rhizome.toml manifests |
 
 ## Development

@@ -25,7 +25,7 @@ Canopy is an infinitely configurable UI for viewing, mutating, and controlling d
 For Rhizome projects, Canopy becomes the unified dashboard:
 
 - View Lotus world state, trigger actions
-- Monitor Winnow extraction progress
+- Monitor Siphon extraction progress
 - Inspect Cambium pipeline status
 - Control any data-producing system
 

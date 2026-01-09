@@ -38,9 +38,9 @@ features:
   - title: Canopy
     details: Universal UI with control plane. View, mutate, and control any data source.
     link: /projects/canopy
-  - title: Winnow
+  - title: Siphon
     details: Legacy lifting. Extract and transform software from obsolete runtimes.
-    link: /projects/winnow
+    link: /projects/siphon
   - title: Nursery
     details: Ecosystem orchestrator. One manifest to coordinate all Rhizome tools.
     link: /projects/nursery

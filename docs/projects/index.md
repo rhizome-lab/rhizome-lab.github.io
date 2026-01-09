@@ -40,7 +40,7 @@ Pipeline orchestrator for data conversion. Type-driven route planning for asset 
 
 Universal UI client with control plane. View, mutate, and control any data source through configurable interfaces.
 
-### [Winnow](/projects/winnow)
+### [Siphon](/projects/siphon)
 
 Legacy software lifting framework. Extract and transform applications from obsolete runtimes (Flash, Director, VB6) into modern web equivalents.
 

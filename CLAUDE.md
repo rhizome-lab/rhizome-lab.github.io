@@ -19,7 +19,7 @@ This is the organization-level documentation site for the Rhizome ecosystem.
 | **Liana** | `~/git/liana` | API bindings IR and codegen |
 | **Cambium** | `~/git/cambium` | Pipeline orchestrator for data conversion |
 | **Canopy** | `~/git/canopy` | Universal UI client with control plane |
-| **Winnow** | `~/git/winnow` | Legacy software lifting framework |
+| **Siphon** | `~/git/siphon` | Legacy software lifting framework |
 | **Nursery** | `~/git/nursery` | Ecosystem orchestrator |
 
 ### Org Resources

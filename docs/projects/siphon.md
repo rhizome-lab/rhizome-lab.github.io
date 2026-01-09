@@ -1,8 +1,8 @@
-# Winnow
+# Siphon
 
 **Legacy software lifting framework in Rust.**
 
-Winnow extracts and transforms applications from obsolete runtimes into modern web-based equivalents.
+Siphon extracts and transforms applications from obsolete runtimes into modern web-based equivalents.
 
 ## Key Features
 
@@ -19,9 +19,9 @@ Winnow extracts and transforms applications from obsolete runtimes into modern w
 
 ## Philosophy
 
-Winnow works on **bytecode and script**, not native binaries. The goal is accurate preservation, not improvement—make the old thing work as it was, in a modern runtime.
+Siphon works on **bytecode and script**, not native binaries. The goal is accurate preservation, not improvement—make the old thing work as it was, in a modern runtime.
 
 ## Links
 
-- [GitHub](https://github.com/rhizome-lab/winnow)
-- [Documentation](https://rhizome-lab.github.io/winnow/)
+- [GitHub](https://github.com/rhizome-lab/siphon)
+- [Documentation](https://rhizome-lab.github.io/siphon/)
