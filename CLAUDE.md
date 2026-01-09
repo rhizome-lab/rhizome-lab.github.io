@@ -17,6 +17,7 @@ This is the organization-level documentation site for the Rhizome ecosystem.
 | **Liana** | `~/git/liana` | API bindings IR and codegen |
 | **Cambium** | `~/git/cambium` | Pipeline orchestrator for data conversion |
 | **Canopy** | `~/git/canopy` | Universal UI client |
+| **Frond** | `~/git/frond` | Procedural world generation library |
 
 ### Org Resources
 
