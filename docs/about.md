@@ -64,6 +64,7 @@ Our projects are designed the same way: independent tools that compose well toge
 | [Liana](/projects/liana) | API bindings | IR and codegen for cross-language bindings |
 | [Cambium](/projects/cambium) | Pipelines | Type-driven route planning for data conversion |
 | [Canopy](/projects/canopy) | UI | Universal client for arbitrary data formats |
+| [Winnow](/projects/winnow) | Preservation | Legacy software lifting from obsolete runtimes |
 
 ## Integration
 
@@ -85,6 +86,9 @@ graph LR
     subgraph "Generation"
         F[Frond]
     end
+    subgraph "Preservation"
+        W[Winnow]
+    end
     subgraph "Interface"
         CN[Canopy] --> |views| L
         CN --> |views| CA
@@ -97,3 +101,4 @@ graph LR
 - **Cambium** orchestrates asset conversion pipelines
 - **Liana** generates API bindings across the ecosystem
 - **Canopy** provides UI for viewing data from any project
+- **Winnow** lifts legacy software into modern web runtimes

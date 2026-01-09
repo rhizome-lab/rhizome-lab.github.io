@@ -22,6 +22,7 @@ export default withMermaid(
             { text: 'Liana', link: 'https://rhizome-lab.github.io/liana/' },
             { text: 'Cambium', link: 'https://rhizome-lab.github.io/cambium/' },
             { text: 'Canopy', link: 'https://rhizome-lab.github.io/canopy/' },
+            { text: 'Winnow', link: 'https://rhizome-lab.github.io/winnow/' },
           ]
         },
       ],
@@ -47,6 +48,7 @@ export default withMermaid(
               { text: 'Liana', link: '/projects/liana' },
               { text: 'Cambium', link: '/projects/cambium' },
               { text: 'Canopy', link: '/projects/canopy' },
+              { text: 'Winnow', link: '/projects/winnow' },
             ]
           },
           {

@@ -35,4 +35,7 @@ features:
   - title: Canopy
     details: Universal UI. Configurable views for any data format or source.
     link: /projects/canopy
+  - title: Winnow
+    details: Legacy lifting. Extract and transform software from obsolete runtimes.
+    link: /projects/winnow
 ---
