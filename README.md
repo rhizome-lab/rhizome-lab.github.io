@@ -19,6 +19,7 @@ Tools for programmable creativity.
 | [Canopy](https://github.com/rhizome-lab/canopy) | Universal UI client with control plane |
 | [Siphon](https://github.com/rhizome-lab/siphon) | Legacy software lifting framework |
 | [Nursery](https://github.com/rhizome-lab/nursery) | Ecosystem orchestrator via rhizome.toml manifests |
+| [Spore](https://github.com/rhizome-lab/spore) | Agentic AI framework with Lua scripting |
 
 ## Development
 

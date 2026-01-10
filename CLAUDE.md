@@ -21,6 +21,7 @@ This is the organization-level documentation site for the Rhizome ecosystem.
 | **Canopy** | `~/git/canopy` | Universal UI client with control plane |
 | **Siphon** | `~/git/siphon` | Legacy software lifting framework |
 | **Nursery** | `~/git/nursery` | Ecosystem orchestrator |
+| **Spore** | `~/git/spore` | Agentic AI framework |
 
 ### Org Resources
 
