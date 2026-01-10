@@ -25,6 +25,7 @@ export default withMermaid(
             { text: 'Canopy', link: 'https://rhizome-lab.github.io/canopy/' },
             { text: 'Siphon', link: 'https://rhizome-lab.github.io/siphon/' },
             { text: 'Nursery', link: 'https://rhizome-lab.github.io/nursery/' },
+            { text: 'Spore', link: 'https://rhizome-lab.github.io/spore/' },
           ]
         },
       ],
@@ -53,6 +54,7 @@ export default withMermaid(
               { text: 'Canopy', link: '/projects/canopy' },
               { text: 'Siphon', link: '/projects/siphon' },
               { text: 'Nursery', link: '/projects/nursery' },
+              { text: 'Spore', link: '/projects/spore' },
             ]
           },
           {

@@ -67,6 +67,7 @@ Our projects are designed the same way: independent tools that compose well toge
 | [Canopy](/projects/canopy) | UI | Universal client with control plane for any data source |
 | [Siphon](/projects/siphon) | Preservation | Legacy software lifting from obsolete runtimes |
 | [Nursery](/projects/nursery) | Orchestration | Manifest-based coordination of Rhizome tools |
+| [Spore](/projects/spore) | AI Agents | Multi-provider LLM client and Lua-based agent framework |
 
 ## Integration
 
