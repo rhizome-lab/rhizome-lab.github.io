@@ -10,15 +10,20 @@ Spore provides infrastructure for building AI coding agents:
 
 - **Multi-provider LLM client** - Anthropic, OpenAI, Gemini, and 10 more via rig-core
 - **Memory store** - SQLite-backed persistent context with metadata queries
-- **Session parsing** - Analyze logs from Claude Code, Gemini CLI, Codex, and Moss agents
 - **Agent scripts** - Lua-based state machine with planner/explorer/evaluator roles
+
+## Philosophy
+
+**Spore** = agency/execution (LLM calls, memory, running agents)
+**Moss** = intelligence (code analysis, session parsing, understanding)
+
+The projects are intentionally not hard-linked. Moss can optionally extend Spore via a plugin architecture (dynamic library adding commands to Spore's Lua runtime).
 
 ## Crates
 
 | Crate | Description |
 |-------|-------------|
 | `spore-core` | LLM client and memory store infrastructure |
-| `spore-sessions` | Session log parsing for AI coding agents |
 
 ## LLM Providers
 
@@ -26,15 +31,6 @@ Spore supports 13 LLM providers via rig-core:
 
 - Anthropic, OpenAI, Azure, Gemini, Cohere, DeepSeek
 - Groq, Mistral, Ollama, OpenRouter, Perplexity, Together, XAI
-
-## Session Formats
-
-Parse and analyze logs from multiple AI agents:
-
-- Claude Code (JSONL)
-- Gemini CLI (JSON)
-- Codex
-- Moss Agent (JSONL)
 
 ## Agent Architecture
 
@@ -64,6 +60,7 @@ let memory = MemoryStore::open(&project_root)?;
 memory.store("context", Some("agent"), 1.0, json!({}))?;
 ```
 
-## Relationship to Moss
+## Links
 
-Spore was extracted from Moss to separate the generic agentic infrastructure from Moss-specific code intelligence features. Moss can depend on Spore for LLM and memory capabilities while keeping its AST and language-specific logic separate.
+- [GitHub](https://github.com/rhizome-lab/spore)
+- [Documentation](https://rhizome-lab.github.io/spore/)

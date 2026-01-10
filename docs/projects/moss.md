@@ -8,9 +8,9 @@ Moss provides tools for understanding, navigating, and modifying code at a struc
 
 - **98 Languages** - Tree-sitter grammars for comprehensive language support
 - **Structural Editing** - AST-based code modifications with fuzzy matching
-- **Lua Workflows** - Scriptable automation with `auto{}` LLM driver
 - **Background Indexing** - Daemon maintains symbol/call graph index
 - **Shadow Git** - Hunk-level edit tracking in `.moss/.git`
+- **Session Analysis** - Parse and analyze AI agent logs (Claude Code, Gemini CLI, etc.)
 
 ## Three Primitives
 
@@ -36,6 +36,10 @@ moss analyze --health
 # Search for a symbol
 moss view SkeletonExtractor
 ```
+
+## Relationship to Spore
+
+Moss focuses on **intelligence** (code analysis, session parsing, understanding) while [Spore](/projects/spore) handles **agency/execution** (LLM calls, memory, running agents). The projects are intentionally not hard-linked. Moss can optionally extend Spore via a plugin architecture.
 
 ## Links
 

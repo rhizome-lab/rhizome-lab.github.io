@@ -82,6 +82,10 @@ graph LR
         M[Moss] --> |analyzes| ALL
         LI[Liana] --> |generates bindings| ALL
     end
+    subgraph "AI Agents"
+        S[Spore] --> |LLM client| ALL
+        M --> |extends| S
+    end
     subgraph "Runtime"
         L[Lotus] --> |uses| R[Resin]
         L --> |federates via| H[Hypha]
@@ -105,6 +109,7 @@ graph LR
 
 - **Nursery** coordinates all tools via `rhizome.toml` manifests
 - **Moss** provides code intelligence for all projects
+- **Spore** provides LLM client and agent runtime; **Moss** can extend it via plugins
 - **Lotus** runs persistent worlds, federates via **Hypha**
 - **Hypha** enables authoritative handoff between Lotus servers
 - **Resin** uses **Dew** for procedural expressions, generates assets for **Lotus**
