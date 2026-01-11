@@ -55,3 +55,7 @@ Language translation layer. Parse source code into a common IR, then emit to dif
 ### [Pith](/projects/pith)
 
 Standard library interfaces. Capability-based, async-first APIs inspired by WASI.
+
+### [Herbarium](/projects/herbarium)
+
+Cross-registry package unification. Aggregates metadata from 70+ package registries and correlates packages by repository URL, homepage, and name.
