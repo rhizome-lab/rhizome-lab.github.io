@@ -19,6 +19,7 @@ Tools for programmable creativity.
 | [Siphon](https://github.com/rhizome-lab/siphon) | Legacy software lifting framework |
 | [Nursery](https://github.com/rhizome-lab/nursery) | Ecosystem orchestrator via rhizome.toml manifests |
 | [Spore](https://github.com/rhizome-lab/spore) | Lua runtime with plugin system |
+| [Pith](https://github.com/rhizome-lab/pith) | Standard library interfaces |
 
 ## Development
 

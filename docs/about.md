@@ -68,6 +68,7 @@ Our projects are designed the same way: independent tools that compose well toge
 | [Nursery](/projects/nursery) | Orchestration | Schema-controlled tool composition via manifests |
 | [Spore](/projects/spore) | Runtime | Lua runtime with plugin system for ecosystem integration |
 | [Reed](/projects/reed) | Translation | Source → IR → source across languages |
+| [Pith](/projects/pith) | Standard library | Capability-based interfaces inspired by WASI |
 
 ## Integration
 

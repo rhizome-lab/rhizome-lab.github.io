@@ -22,6 +22,7 @@ This is the organization-level documentation site for the Rhizome ecosystem.
 | **Nursery** | `~/git/nursery` | Ecosystem orchestrator |
 | **Spore** | `~/git/spore` | Lua runtime with plugin system |
 | **Reed** | `~/git/reed` | Language translation layer (source → IR → source) |
+| **Pith** | `~/git/pith` | Standard library interfaces |
 
 ### Org Resources
 
