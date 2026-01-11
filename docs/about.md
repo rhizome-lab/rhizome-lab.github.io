@@ -67,7 +67,7 @@ Our projects are designed the same way: independent tools that compose well toge
 | [Canopy](/projects/canopy) | UI | Universal client with control plane for any data source |
 | [Siphon](/projects/siphon) | Preservation | Legacy software lifting from obsolete runtimes |
 | [Nursery](/projects/nursery) | Orchestration | Schema-controlled tool composition via manifests |
-| [Spore](/projects/spore) | AI Agents | Multi-provider LLM client and Lua-based agent framework |
+| [Spore](/projects/spore) | Runtime | Lua runtime with plugin system for ecosystem integration |
 | [Reed](/projects/reed) | Translation | Source → IR → source across languages |
 
 ## Integration
@@ -84,8 +84,8 @@ graph LR
         LI[Liana] --> |generates bindings| ALL
         RE[Reed] --> |translates| ALL
     end
-    subgraph "AI Agents"
-        S[Spore] --> |LLM client| ALL
+    subgraph "Scripting"
+        S[Spore] --> |Lua runtime| ALL
         M --> |extends| S
         L --> |world state| S
         RE --> |verb codegen| S
@@ -114,7 +114,7 @@ graph LR
 - **Nursery** coordinates tools via schema-validated manifests
 - **Moss** provides code intelligence for all projects
 - **Reed** provides bidirectional translation between languages
-- **Spore** provides LLM client and agent runtime; **Moss** and **Lotus** extend it via plugins
+- **Spore** provides Lua runtime with integrations for **Moss** and **Lotus**
 - **Lotus** runs persistent worlds, federates via **Hypha**
 - **Hypha** enables authoritative handoff between Lotus servers
 - **Resin** uses **Dew** for procedural expressions, generates assets for **Lotus**

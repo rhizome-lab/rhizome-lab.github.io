@@ -50,7 +50,7 @@ Schema-controlled tool orchestrator. Define tool schemas and compose any CLI too
 
 ### [Spore](/projects/spore)
 
-Agentic AI framework with Lua scripting. Multi-provider LLM client, memory store, session parsing, and state machine agents.
+Lua runtime with plugin system for the Rhizome ecosystem. Extensible via integrations from Moss, Lotus, and other projects.
 
 ### [Reed](/projects/reed)
 

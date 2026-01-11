@@ -45,7 +45,7 @@ features:
     details: Schema-controlled tool orchestrator. Compose CLI tools via manifests.
     link: /projects/nursery
   - title: Spore
-    details: Agentic AI framework. Multi-provider LLM client with Lua scripting.
+    details: Lua runtime with plugin system for the Rhizome ecosystem.
     link: /projects/spore
   - title: Reed
     details: Language translation layer. Source → IR → source across languages.
