@@ -56,6 +56,6 @@ Language translation layer. Parse source code into a common IR, then emit to dif
 
 Standard library interfaces. Capability-based, async-first APIs inspired by WASI.
 
-### [Herbarium](/projects/herbarium)
+### [Flora](/projects/flora)
 
-Cross-registry package unification. Aggregates metadata from 70+ package registries and correlates packages by repository URL, homepage, and name.
+Lua-based tools, scaffolds, and orchestration. Contains agent scripts, project seeds for nursery, and shared Lua utilities.

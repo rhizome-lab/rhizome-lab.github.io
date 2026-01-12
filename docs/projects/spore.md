@@ -9,7 +9,7 @@ Lua runtime with plugin system for the Rhizome ecosystem.
 Spore provides a Lua execution environment with integrations for other Rhizome projects:
 
 - **Lua runtime** - mlua-based execution environment with plugin architecture
-- **Integrations** - spore-moss and spore-lotus add domain-specific Lua APIs
+- **Integrations** - Domain-specific Lua APIs via the Integration trait
 
 ## Crates
 
@@ -23,7 +23,7 @@ Spore provides a Lua execution environment with integrations for other Rhizome p
 | Crate | Description |
 |-------|-------------|
 | `rhizome-spore-moss` | Adds [Moss](/projects/moss) code analysis to Lua |
-| `rhizome-spore-lotus` | Adds [Lotus](/projects/lotus) world state to Lua |
+| `rhizome-spore-llm` | Adds LLM client APIs to Lua |
 
 ## Usage
 
