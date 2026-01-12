@@ -65,7 +65,7 @@ Our projects are designed the same way: independent tools that compose well toge
 | [Cambium](/projects/cambium) | Pipelines | Type-driven route planning for data conversion |
 | [Canopy](/projects/canopy) | UI | Universal client with control plane for any data source |
 | [Siphon](/projects/siphon) | Preservation | Legacy software lifting from obsolete runtimes |
-| [Nursery](/projects/nursery) | Orchestration | Schema-controlled tool composition via manifests |
+| [Nursery](/projects/nursery) | Configuration | Unified tool config and project scaffolding from seeds |
 | [Spore](/projects/spore) | Runtime | Lua runtime with plugin system for ecosystem integration |
 | [Reed](/projects/reed) | Translation | Source → IR → source across languages |
 | [Pith](/projects/pith) | Standard library | Capability-based interfaces inspired by WASI |

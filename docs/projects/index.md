@@ -42,7 +42,7 @@ Legacy software lifting framework. Extract and transform applications from obsol
 
 ### [Nursery](/projects/nursery)
 
-Schema-controlled tool orchestrator. Define tool schemas and compose any CLI tools via manifests.
+Unified tool configuration and project scaffolding. Manage all tool configs from one manifest, scaffold projects from seeds.
 
 ### [Spore](/projects/spore)
 

@@ -39,7 +39,7 @@ features:
     details: Legacy lifting. Extract and transform software from obsolete runtimes.
     link: /projects/siphon
   - title: Nursery
-    details: Schema-controlled tool orchestrator. Compose CLI tools via manifests.
+    details: Unified tool configuration and project scaffolding from seeds.
     link: /projects/nursery
   - title: Spore
     details: Lua runtime with plugin system for the Rhizome ecosystem.
@@ -50,4 +50,7 @@ features:
   - title: Pith
     details: Standard library interfaces. Capability-based APIs inspired by WASI.
     link: /projects/pith
+  - title: Flora
+    details: Lua-based tools, seeds, and orchestration scripts for the ecosystem.
+    link: /projects/flora
 ---

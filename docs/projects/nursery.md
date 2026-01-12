@@ -1,62 +1,67 @@
 # Nursery
 
-**Schema-controlled tool orchestrator.**
+**Unified tool configuration and project scaffolding.**
 
-Nursery is a generic orchestrator for composing CLI tools. Define tool schemas and compose them via manifests—no hardcoded tool knowledge required.
+Nursery manages tool configs from a single `nursery.toml` manifest and scaffolds new projects from seed templates.
 
-## Key Features
+**Repository:** [github.com/rhizome-lab/nursery](https://github.com/rhizome-lab/nursery)
 
-- **Schema-Driven** - Tools declare their interfaces via JSON Schema
-- **Manifest Composition** - One `rhizome.toml` file composes any set of tools
-- **Lazy Discovery** - Only inspects tools that are referenced
-- **Fail Informatively** - Clear errors when tools are missing or misconfigured
-- **Plugin Architecture** - Add new tools without modifying Nursery itself
+## What Nursery Does
 
-## Tool Schemas
+- **Generate** — `nursery.toml` → per-tool native configs
+- **Validate** — Check configs against tool schemas before writing
+- **Template** — Variable substitution, shared values across tools
+- **Scaffold** — Create new projects from seed templates
 
-Tools register themselves with a schema describing their inputs and outputs:
+## What Nursery Does NOT Do
 
-```json
-{
-  "name": "my-tool",
-  "version": "1.0.0",
-  "inputs": {
-    "source": { "type": "path", "required": true },
-    "format": { "type": "string", "enum": ["json", "yaml"] }
-  },
-  "outputs": {
-    "result": { "type": "path" }
-  }
-}
+- **Run tools** — That's spore's job
+- **Manage execution order** — That's spore's job
+- **Install tools** — Use your package manager
+
+## The Invisible Manifest
+
+`nursery.toml` is the **source of truth** but is **invisible at runtime**. Tools never read it directly—they only read their generated native configs.
+
+```
+nursery.toml  →  nursery generate  →  .spore/config.toml
+                                  →  .siphon/config.toml
+                                  →  .dew/config.toml
 ```
 
-## The Manifest
+This keeps tools simple and decoupled from nursery.
+
+## Example Manifest
 
 ```toml
-# rhizome.toml
+# nursery.toml
 [project]
 name = "my-project"
 version = "0.1.0"
 
-[tools.convert]
-source = "./input.json"
-format = "yaml"
+[variables]
+assets = "./assets"
 
-[tools.process]
-input = "${tools.convert.result}"
+[siphon]
+source = "./dump/game.exe"
+output = "{{assets}}/raw"
+
+[dew]
+pipeline = "main.dew"
+input = "{{assets}}/raw"
+output = "{{assets}}/processed"
 ```
 
-The manifest composes tools by wiring outputs to inputs. Nursery validates the pipeline against tool schemas before execution.
+Running `nursery generate` creates `.siphon/config.toml` and `.dew/config.toml`. Tools read their native configs—no special runtime behavior.
 
 ## Seeds
 
 Pre-configured starter templates:
 
-- **seed-archaeology** - Lifting legacy games (siphon → lotus)
-- **seed-creation** - New Lotus projects from scratch
-- **seed-lab** - Full ecosystem sandbox
+- **seed-archaeology** — Lifting legacy games (siphon + resin)
+- **seed-creation** — New game projects from scratch
+- **seed-lab** — Full ecosystem sandbox
 
 ## Links
 
 - [GitHub](https://github.com/rhizome-lab/nursery)
-- [Documentation](https://rhizome-lab.github.io/nursery/)
